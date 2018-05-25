@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Milonga" rel="stylesheet"> 
-    <script src="script.js"></script>
+ 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>  
@@ -68,20 +68,21 @@
 
         </div>
 
-           <div class="g-border" style="padding-bottom: 0.2em; padding-top: 0.5em; background-color:#d8edfab2"><h1><b>Umiejętności</b></h1></div> 
+           <div class="g-border" style="padding-bottom: 0.2em; padding-top: 0.5em; margin-top: 1em; background-color:#d8edfab2"><h1><b>Umiejętności</b></h1></div> 
 
         <div style="background-color:#d8edfab2">
         <div class="container"> <!-- technologie -->
             <div class="row" style="padding-bottom: 0;">
                 <div class="col-12 col-md-4 col-xl-4 logo-html">
-                    <h2>HTML</h2> 
+                    <h3>HTML</h3> 
                     <br><br><br><br><br><br><br><br><br><br><br>
                 </div>
                 <div class="col-12 col-md-4 col-xl-4 logo-css">
-                    <h2>CSS</h2> <br><br><br><br><br><br><br><br><br><br>
+                    <h3>CSS</h3>
+                    <br><br><br><br><br><br><br><br><br><br>
                 </div>
                 <div class="col-12 col-md-4 col-xl-4 logo-js">
-                    <h2>JavaScript</h2> <br><br><br><br><br><br><br><br><br><br>
+                    <h3>JavaScript</h3> <br><br><br><br><br><br><br><br><br><br>
                 </div>
             </div>
         </div>
@@ -89,10 +90,10 @@
         <div class="container">  <!-- technologie cd. -->
                 <div class="row" style="padding-bottom: 0; padding-top: 0;">
                     <div class="col-12 col-md-6 col-xl-6 logo-git">
-                        <h2>GitHub</h2> <br><br><br><br><br><br><br><br><br><br>
+                        <h3>GitHub</h2> <br><br><br><br><br><br><br><br><br><br>
                     </div>
                     <div class="col-12 col-md-6 col-xl-6 logo-vs">
-                        <h2>Visual Studio Code</h2> <br><br><br><br><br><br><br><br><br><br>
+                        <h3>Visual Studio Code</h2> <br><br><br><br><br><br><br><br><br><br>
                     </div>
                 </div>
             </div>
@@ -117,16 +118,21 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container g-border2" style="background-color: #fcd580b2; margin-top: 1em;">
             <div class="row">
                 <div class="col-12 col-md-6 col-xl-6">
                     <form>
                         <div style="padding: 10px 0"><h1><b>Email</b></h1></div>
-                        <div class="form-group">
+                        <form method="POST" action="https://formspree.io/komcio96@gmail.com">
+                            <input name="email" class="form-control d-inline" placeholder="Adres email" type="email" style="margin-bottom: 10px">
+                            <textarea name="message" class="form-control" id="resize" rows="3" placeholder="Wiadomość" style="margin-bottom: 10px"></textarea>
+                            <button type="submit" class="btn btn-position d-inline">Wyślij</button>
+                          </form>
+                        <!-- <div class="form-group">
                             <input type="email" class="form-control d-inline" placeholder="Adres email" style="margin-bottom: 10px">
                             <textarea class="form-control" id="resize" rows="3" placeholder="Wiadomość" style="margin-bottom: 10px"></textarea>
                             <button type="submit" class="btn btn-position d-inline">Wyślij</button> 
-                        </div>
+                        </div> -->
                     </form>
                 </div>
 
@@ -135,8 +141,8 @@
                         <div class="row">
                             <div class="media-icons center">
                                 <div><h1><b>Social media</b></h1></div>
-                                <i class="fa fa-facebook-official img-transform" aria-hidden="true" style="padding-left: 20px"></i>
-                                <i class="fa fa-github img-transform" aria-hidden="true"></i>
+                                <a target="_blank" href="https://www.facebook.com/konrado.20" style="color: rgb(87, 87, 87)"><i class="fa fa-facebook-official img-transform" aria-hidden="true" style="padding-left: 20px"></i></a>
+                                <a target="_blank" href="https://github.com/devKomak" style="color: rgb(87, 87, 87)"><i class="fa fa-github img-transform" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -147,12 +153,13 @@
 
         <div class="container">
             <div class="row">
-                <footer class="col-12 col-md-12 col-xl-12" style="padding: 0;">
+                <footer class="col-12 col-md-12 col-xl-12" style="margin-top: 0.4em; background-color: #c78e13b2">
                     <p style="text-align: center; font-size: 1.5em; margin-top: 0.5em;">Konrad Marszałek &copy 2018</p>
                 </footer> 
             </div>
         </div>
         
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
